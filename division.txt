@@ -1,0 +1,21 @@
+Diagrama UML - https://www.lucidchart.com/invitations/accept/5328d33a-61e9-4d53-b1ce-3f80987d6afd
+
+División de trabajo
+
+Natán -
+Usuario
+PersonalAdministrativo
+Paciente
+Cita
+CitaMedico
+CitaPaciente
+
+
+Kevin -
+Medico
+MedicinaGeneral
+Especialista
+ESPECIALIDAD
+ExpedienteMedico
+Hospital
+
