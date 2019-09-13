@@ -5,13 +5,20 @@ public class ExpedienteMedico {
 	private ArrayList<String> padecimientos;
 	private ArrayList<String> medicamentos;
 	
+	public ExpedienteMedico() {
+		historialCitas = new ArrayList<Cita>();
+		padecimientos = new ArrayList<String>();
+		medicamentos = new ArrayList<String>();
+	}
 	
 	public ArrayList<Cita> getHistorialCitas() {
 		return historialCitas;
 	}
-	public void setHistorialCitas(ArrayList<Cita> historialCitas) {
-		this.historialCitas = historialCitas;
+	
+	public void addCita(Cita cita) {
+		historialCitas.add(cita);
 	}
+	
 	public ArrayList<String> getPadecimientos() {
 		return padecimientos;
 	}

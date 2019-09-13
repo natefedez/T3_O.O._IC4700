@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package natanfdecastro.hospital;
+import java.util.ArrayList;
 
-/**
- *
- * @author windows10
- */
-public class Paciente {
-    
+public class Paciente extends Usuario{
+
+	private MedicinaGeneral medicoCabecera;
+	private ExpedienteMedico expedienteMedico;
+	
+	
+	public boolean referirEspecialista(Especialista doctor, String hora, String fecha) {
+		
+		Cita cita = medicoCabecera.referir(doctor, this, hora, fecha);
+		
+		if(cita == null) {
+			return false;
+		} else {
+			expedienteMedico.addCita(cita);
+			return true;
+		}
+	}
+	
+	public ArrayList<Cita> getAgenda(){
+		return expedienteMedico.getHistorialCitas();
+	}
+	
 }
