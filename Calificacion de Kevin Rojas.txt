@@ -1,5 +1,5 @@
-
-Calificación de Natán Hernandez - 100
+﻿
+Calificación de Natán Fernánndez de Castro (2017105774) - 100
 
 Natán utilizó una super clase cita de la cual heredan CitaMedico y Cita paciente lo cual elimina el problema de redundancia al momento de tener una sola clase cita que guarde el doctor y el paciente para ambas clases respectivas.
 

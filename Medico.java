@@ -5,6 +5,22 @@ public abstract class Medico extends Usuario{
     protected ArrayList<Cita> citas = new ArrayList<Cita>();
     protected int numeroIndicador;
     
+    public Medico(){};
+    
+    public Medico(String nombre, String apellido, int cedula, String correoElectronico){
+    
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.cedula = cedula;
+        this.correoElectronico = correoElectronico;
+    
+    }
+    
+    public String getNombre(){ return nombre; }
+    public String getApellido(){ return apellido; }
+    public int getCedula(){ return cedula; }
+    public String getCorreoElectronico(){ return correoElectronico; }
+    
     public Cita asignarCita(Paciente paciente, String hora, String fecha) {
     	
     	if(citaReservada(hora, fecha)) {

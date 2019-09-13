@@ -1,0 +1,10 @@
+Calificación de Kevin Rojas (2016081582) - 100
+evaluado por Natán Fernández (2017105774)
+
+Kevin implementó una clase Medicina General, que heredaba de la clase Medico,
+en la que era la clase que va a tener cada Medico en caso que no posea una especialidad.
+
+Implementó la estructura de Medico, Paciente y Funcionario de manera de diferente a mi implementación
+pero funcional de igual manera.
+
+En conclusión, todo bien implementado y sin problemas.
