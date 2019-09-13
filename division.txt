@@ -4,9 +4,6 @@ División de trabajo
 
 Natán -
 Usuario
-PersonalAdministrativo
-Paciente
-Cita
 CitaMedico
 CitaPaciente
 
@@ -19,3 +16,6 @@ ESPECIALIDAD
 ExpedienteMedico
 Hospital
 
+Cita
+PersonalAdministrativo
+Paciente
