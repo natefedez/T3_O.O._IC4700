@@ -1,0 +1,6 @@
+
+Calificación de Natán Hernandez - 100
+
+Natán utilizó una super clase cita de la cual heredan CitaMedico y Cita paciente lo cual elimina el problema de redundancia al momento de tener una sola clase cita que guarde el doctor y el paciente para ambas clases respectivas.
+
+También utilizó una clase abstracta Usuario para encapsular todos los tipos de usuario y asi reutilizar el codigo que es propio de todos los usuarios.
