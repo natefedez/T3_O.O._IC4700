@@ -1,0 +1,4 @@
+
+public enum Especialidad {
+	ALERGOLOGO
+}
