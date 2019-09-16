@@ -6,6 +6,9 @@ Natán -
 Usuario
 CitaMedico
 CitaPaciente
+Cita
+PersonalAdministrativo
+Paciente
 
 
 Kevin -
@@ -15,7 +18,3 @@ Especialista
 ESPECIALIDAD
 ExpedienteMedico
 Hospital
-
-Cita
-PersonalAdministrativo
-Paciente
