@@ -9,7 +9,7 @@ public abstract class Cita implements InformeImpreso{ // clase abstracta que es 
     
 	private String fecha; // Atributo fecha establecido como privado
 	private String hora;  // Atributo hora establecido como privado
-
+	
 	public String getFecha() { // get para fecha, puede ser accedido por Cita Medico y CitaPaciente
 		return fecha;      // mediante implementación método setInfo en constructores
 	}

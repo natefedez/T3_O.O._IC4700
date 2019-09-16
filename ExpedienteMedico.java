@@ -25,6 +25,14 @@ public class ExpedienteMedico implements InformeImpreso{
 		historialCitas.add(cita);
 	}
 	
+	public void addPadecimientos(String padecimiento) {
+		padecimientos.add(padecimiento);
+	}
+	
+	public void addMedicamentos(String medicamento) {
+		medicamentos.add(medicamento);
+	}
+	
 	public ArrayList<String> getPadecimientos() {
 		return padecimientos;
 	}
@@ -41,10 +49,17 @@ public class ExpedienteMedico implements InformeImpreso{
     @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase CitaPaciente
     public String impInforme(){
 
-        // Implementación de interfaz imprimir informe
-        // Retorna String de datos de ExpedienteMedico de Paciente
-        
-        return "Expediente";
+    	String informe = "Informe de Expediente Medico: \n";
+    	informe = informe + "[Historial de Citas] \n";
+    	for(int i = 0; i < historialCitas.size() ; ++i) informe = informe + "\n [Cita #" + i + "] "+ historialCitas.get(i) ;
+    	
+    	informe = informe + "\n\n[Padecimientos] \n";
+    	for(int i = 0; i < padecimientos.size() ; ++i) informe = informe + "\n [Padecimiento #" + i + "] "+ padecimientos.get(i);
+    	
+    	informe = informe + "\n\n[Medicamentos] \n";
+    	for(int i = 0; i < medicamentos.size() ; ++i) informe = informe + "\n [Medicamiento #" + i + "] "+ medicamentos.get(i);
+    	
+        return informe;
         
     };
 	

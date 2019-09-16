@@ -9,6 +9,17 @@ import java.util.ArrayList;
 
 public class PersonalAdministrativo extends Usuario {
 		
+	
+	
+	public PersonalAdministrativo(String nombre, String apellido, int cedula, String correo) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.cedula = cedula;
+		this.correoElectronico = correo;
+		
+	}
+
 	private ArrayList<Cita> accederAgenda (Medico medico){
 		return medico.getAgenda();
 	}
@@ -23,9 +34,10 @@ public class PersonalAdministrativo extends Usuario {
         // Implementación de interfaz imprimir informe
         // Retorna String de datos de agenda para Paciente y Medico de PersonalAdministrativo
     
-        //listaAgenda.forEach((cita) -> {
+        return "Nombre personal administrativo: " + this.getNombre() + // Retorna atributo nombre de objeto en Usuario
+        "\n Apellido personal administrativo: " + this.getApellido()+ // Retorna atributo apellido de objeto en Usuario
+        "\n Cédula personal administrativo: " + this.getCedula()+     // Retorna atributo cedula de objeto en Usuario
+        "\n Correo Eletrónico: " + this.getCorreoElectronico(); // Retorna atributo Correo Electronico de objeto en Usuario
         
-            return "Agenda";
-    
-    };
-}
+    }
+};

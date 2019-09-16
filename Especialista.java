@@ -36,9 +36,9 @@ public class Especialista extends Medico {
         // Retorna String de datos de Especialista
         
         return "Nombre Especialista: " + this.getNombre() + " " + this.getApellido() +  // Retorna atributo nombre de objeto en Especialista
-               "Tipo Especialidad: " + this.getEspecialidad() + // Retorna atributo Especialidad de objeto en Espealista 
-               "Cedula Especialista: " + this.getCedula() +     // Retorna atributo cedula de objeto en Especialista
-               "Correo Electrónico Especialista: " + this.getCorreoElectronico(); // Retorna atributo Correo Electronico de objeto en Especialista
+               "\n Tipo Especialidad: " + this.getEspecialidad() + // Retorna atributo Especialidad de objeto en Especialista 
+               "\n Cedula Especialista: " + this.getCedula() +     // Retorna atributo cedula de objeto en Especialista
+               "\n Correo Electrónico Especialista: " + this.getCorreoElectronico(); // Retorna atributo Correo Electronico de objeto en Especialista
          
     }; 
 	

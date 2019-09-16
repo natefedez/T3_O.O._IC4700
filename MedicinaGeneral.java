@@ -33,16 +33,16 @@ public class MedicinaGeneral extends Medico {
 		return medico.getAgenda();
 	}
 
-    @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase CitaPaciente
+   @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase CitaPaciente
    public String impInforme(){
-       
+	   
        // Implementación de interfaz imprimir informe
        // Retorna String de datos de Especialista
-       
-       return "Nombre Medico General: " + this.getNombre() + " " + this.getApellido()  +   // Retorna atributo nombre de objeto en Especialista
-              "Cedula Especialista: " + this.getCedula() +     // Retorna atributo cedula de objeto en Especialista
-              "Correo Electronico Especialista: " + this.getCorreoElectronico(); // Retorna atributo Correo Electronico de objeto en Especialista
-        
+    	
+       return "Nombre Medico General: " + this.getNombre() + " " + this.getApellido()  +   // Retorna atributo nombre de objeto en MedicoGeneral
+              "\n Cedula MedicoGeneral: " + this.getCedula() +     // Retorna atributo cedula de objeto en MedicoGeneral
+              "\n Correo Electronico MedicoGeneral: " + this.getCorreoElectronico(); // Retorna atributo Correo Electronico de objeto en MedicoGeneral
+        	
    }; 
 
 

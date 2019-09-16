@@ -11,21 +11,6 @@ public abstract class Medico extends Usuario {
     public ArrayList<Cita> citas = new ArrayList<Cita>();
     public int numeroIndicador;
     
-    public Medico(){};
-    
-    public Medico(String nombre, String apellido, int cedula, String correoElectronico){
-    
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.cedula = cedula;
-        this.correoElectronico = correoElectronico;
-    
-    }
-    
-    public String getNombre(){ return nombre; }
-    public String getApellido(){ return apellido; }
-    public int getCedula(){ return cedula; }
-    public String getCorreoElectronico(){ return correoElectronico; }
     
     public Cita asignarCita(Paciente paciente, String hora, String fecha) {
     	
@@ -47,17 +32,4 @@ public abstract class Medico extends Usuario {
     	return true;
     }
 
-    @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase Medico
-    public String impInforme(){
-        
-        // Implementación de interfaz imprimir informe
-        // Retorna String de datos de Medico
-        
-        return "Nombre Medico: " + this.getNombre() + // Retorna atributo nombre de objeto en Medico
-        ", Apellido Paciente: " + this.getApellido()+ // Retorna atributo apellido de objeto en Medico
-        ", Cédula Paciente: " + this.getCedula()+     // Retorna atributo cedula de objeto en Medico
-        ", Correo Eletrónico: " + this.getCorreoElectronico(); // Retorna atributo Correo Electronico de objeto en Medico
-        
-        };     
-    
 }

@@ -14,5 +14,12 @@ public abstract class Usuario implements InformeImpreso {
     protected int cedula; // Atributo nombre para cedula
     protected String correoElectronico; // Atributo nombre para correoElectronico
     
+    
+    public String getNombre(){ return nombre; }
+    public String getApellido(){ return apellido; }
+    public int getCedula(){ return cedula; }
+    public String getCorreoElectronico(){ return correoElectronico; }
+    
+    
 }
 
