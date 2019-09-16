@@ -1,6 +1,5 @@
-package natanfdecastro.tarea3oo_lenguajes;
 
-public class CitaPaciente {
+public class CitaPaciente implements InformeImpreso{
 
     
 }

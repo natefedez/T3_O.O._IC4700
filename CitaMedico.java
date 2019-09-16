@@ -1,6 +1,5 @@
-package natanfdecastro.tarea3oo_lenguajes;
 
-public class CitaMedico {
+public class CitaMedico implements InformeImpreso{
 
     
     

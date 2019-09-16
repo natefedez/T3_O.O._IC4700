@@ -1,7 +1,7 @@
-package natanfdecastro.tarea3oo_lenguajes;
+
 import java.util.ArrayList;
 
-public class Paciente extends Usuario{
+public class Paciente extends Usuario {
 
 	private MedicinaGeneral medicoCabecera;
 	private ExpedienteMedico expedienteMedico;

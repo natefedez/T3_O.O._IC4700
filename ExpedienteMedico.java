@@ -1,7 +1,7 @@
-package natanfdecastro.tarea3oo_lenguajes;
+
 import java.util.ArrayList;
 
-public class ExpedienteMedico {
+public class ExpedienteMedico implements InformeImpreso{
 	private ArrayList<Cita> historialCitas;
 	private ArrayList<String> padecimientos;
 	private ArrayList<String> medicamentos;

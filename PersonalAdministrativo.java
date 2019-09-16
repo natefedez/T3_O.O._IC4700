@@ -1,7 +1,7 @@
-package natanfdecastro.tarea3oo_lenguajes;
+
 import java.util.ArrayList;
 
-public class PersonalAdministrativo extends Usuario{
+public class PersonalAdministrativo extends Usuario {
 		
 	private ArrayList<Cita> accederAgenda (Medico medico){
 		return medico.getAgenda();

@@ -1,7 +1,6 @@
-package natanfdecastro.tarea3oo_lenguajes;
 import java.util.ArrayList;
 
-public class MedicinaGeneral extends Medico{
+public class MedicinaGeneral extends Medico {
 
 	public Cita pedirCita(Paciente paciente, String hora, String fecha) {
 		return asignarCita(paciente, hora, fecha);
@@ -15,8 +14,10 @@ public class MedicinaGeneral extends Medico{
 		return medico.asignarCita(paciente, hora, fecha);
 	}
 	
-	private ArrayList<Cita> accederAgenda(Medico medico) {
+	public ArrayList<Cita> accederAgenda(Medico medico) {
 		return medico.getAgenda();
 	}
+
+
 	
 }

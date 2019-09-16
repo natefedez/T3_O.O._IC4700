@@ -1,6 +1,6 @@
-package natanfdecastro.tarea3oo_lenguajes;
 
-public class Especialista extends Medico{
+
+public class Especialista extends Medico {
 	
 	private Especialidad tipoEspecialidad;
 	

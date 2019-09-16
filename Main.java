@@ -1,4 +1,3 @@
-package natanfdecastro.tarea3oo_lenguajes;
 
 /**
  *
@@ -18,7 +17,7 @@ public class Main {
                 
                 Medico doctor1 = new Medico("Juan", "Perez", 117200930, "juanperez@medicomail.com");
                 
-                doctor1.getNombre();
+                System.out.println(doctor1.getNombre());
                 
                 //doctor1.referir();
 		

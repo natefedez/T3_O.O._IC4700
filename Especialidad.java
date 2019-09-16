@@ -1,5 +1,5 @@
-package natanfdecastro.tarea3oo_lenguajes;
 
-public enum Especialidad {
+
+public enum Especialidad implements InformeImpreso{
 	ALERGOLOGO
 }
