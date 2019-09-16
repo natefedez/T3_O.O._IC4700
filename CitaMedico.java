@@ -1,6 +1,8 @@
 
-public class CitaMedico implements InformeImpreso{
+public class CitaMedico extends Cita{
 
-    
-    
+    public CitaMedico() {
+		this.setInfo("", "");
+	}
+
 }

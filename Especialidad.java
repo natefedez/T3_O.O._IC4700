@@ -1,5 +1,5 @@
 
 
-public enum Especialidad implements InformeImpreso{
+public enum Especialidad {
 	ALERGOLOGO
 }

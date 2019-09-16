@@ -1,5 +1,5 @@
 
-public class CitaPaciente implements InformeImpreso{
+public class CitaPaciente extends Cita{
 
     
 }
