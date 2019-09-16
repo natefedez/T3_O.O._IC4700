@@ -1,4 +1,3 @@
-package natanfdecastro.tarea3oo_lenguajes;
 import java.util.ArrayList;
 /**
  * Instituto Tecnológico de Costa Rica
@@ -9,6 +8,15 @@ import java.util.ArrayList;
 
 public class MedicinaGeneral extends Medico {
 
+    public MedicinaGeneral(String nombre, String apellido, int cedula, String correoElectronico) {
+        
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.cedula = cedula;
+        this.correoElectronico = correoElectronico;
+        
+    }
+	
 	public Cita pedirCita(Paciente paciente, String hora, String fecha) {
 		return asignarCita(paciente, hora, fecha);
 	}
@@ -24,6 +32,18 @@ public class MedicinaGeneral extends Medico {
 	public ArrayList<Cita> accederAgenda(Medico medico) {
 		return medico.getAgenda();
 	}
+
+    @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase CitaPaciente
+   public String impInforme(){
+       
+       // Implementación de interfaz imprimir informe
+       // Retorna String de datos de Especialista
+       
+       return "Nombre Medico General: " + this.getNombre() + " " + this.getApellido()  +   // Retorna atributo nombre de objeto en Especialista
+              "Cedula Especialista: " + this.getCedula() +     // Retorna atributo cedula de objeto en Especialista
+              "Correo Electronico Especialista: " + this.getCorreoElectronico(); // Retorna atributo Correo Electronico de objeto en Especialista
+        
+   }; 
 
 
 	

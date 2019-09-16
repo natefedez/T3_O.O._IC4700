@@ -1,4 +1,3 @@
-package natanfdecastro.tarea3oo_lenguajes;
 /**
  * Instituto Tecnológico de Costa Rica
  * Tarea 3 Programacion Orientada a Objetos 
@@ -18,15 +17,15 @@ public class PersonalAdministrativo extends Usuario {
 		return paciente.getAgenda();
 	}
         
-        @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase PersonalAdministrativo
-        public String impInforme(){
-            
-            // Implementación de interfaz imprimir informe
-            // Retorna String de datos de agenda para Paciente y Medico de PersonalAdministrativo
+    @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase PersonalAdministrativo
+    public String impInforme(){
         
-            //listaAgenda.forEach((cita) -> {
-            
-                return "Agenda";
+        // Implementación de interfaz imprimir informe
+        // Retorna String de datos de agenda para Paciente y Medico de PersonalAdministrativo
+    
+        //listaAgenda.forEach((cita) -> {
         
-        };
+            return "Agenda";
+    
+    };
 }

@@ -1,4 +1,3 @@
-package natanfdecastro.tarea3oo_lenguajes;
 /**
  * Instituto Tecnológico de Costa Rica
  * Tarea 3 Programacion Orientada a Objetos 

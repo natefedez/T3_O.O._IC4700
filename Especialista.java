@@ -1,4 +1,3 @@
-package natanfdecastro.tarea3oo_lenguajes;
 /**
  * Instituto Tecnológico de Costa Rica
  * Tarea 3 Programacion Orientada a Objetos 
@@ -10,16 +9,13 @@ public class Especialista extends Medico {
 	
 	private Especialidad tipoEspecialidad;
 	
-	public Especialista (Especialidad tipoEspecialidad) {
-		this.tipoEspecialidad = tipoEspecialidad;
-	}
-
-    public Especialista(String nombre, String apellido, int cedula, String correoElectronico) {
+    public Especialista(String nombre, String apellido, int cedula, String correoElectronico, Especialidad tipoEspecialidad) {
         
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
         this.correoElectronico = correoElectronico;
+        this.tipoEspecialidad = tipoEspecialidad;
         
     }
     
@@ -39,7 +35,7 @@ public class Especialista extends Medico {
         // Implementación de interfaz imprimir informe
         // Retorna String de datos de Especialista
         
-        return "Nombre Especialista: " + this.getNombre() +     // Retorna atributo nombre de objeto en Especialista
+        return "Nombre Especialista: " + this.getNombre() + " " + this.getApellido() +  // Retorna atributo nombre de objeto en Especialista
                "Tipo Especialidad: " + this.getEspecialidad() + // Retorna atributo Especialidad de objeto en Espealista 
                "Cedula Especialista: " + this.getCedula() +     // Retorna atributo cedula de objeto en Especialista
                "Correo Electrónico Especialista: " + this.getCorreoElectronico(); // Retorna atributo Correo Electronico de objeto en Especialista

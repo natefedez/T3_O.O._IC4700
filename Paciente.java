@@ -1,4 +1,3 @@
-package natanfdecastro.tarea3oo_lenguajes;
 /**
  * Instituto Tecnológico de Costa Rica
  * Tarea 3 Programacion Orientada a Objetos 
@@ -17,7 +16,7 @@ public class Paciente extends Usuario {
         
         public Paciente(String nombre, String apellido, int cedula, String correoElectronico){
             
-            // COnstructor para objeto paciente
+            // Constructor para objeto paciente
            
             this.nombre = nombre;
             this.apellido = apellido;

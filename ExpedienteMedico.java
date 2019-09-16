@@ -1,4 +1,3 @@
-package natanfdecastro.tarea3oo_lenguajes;
 import java.util.ArrayList;
 /**
  * Instituto Tecnológico de Costa Rica
@@ -41,7 +40,7 @@ public class ExpedienteMedico implements InformeImpreso{
 
     @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase CitaPaciente
     public String impInforme(){
-        
+
         // Implementación de interfaz imprimir informe
         // Retorna String de datos de ExpedienteMedico de Paciente
         
