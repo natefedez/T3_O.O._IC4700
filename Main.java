@@ -7,17 +7,20 @@ package natanfdecastro.tarea3oo_lenguajes;
  * Kevin Rojas - Natan Fernandez
  */
 
-
 public class Main {
+    
+        //Clase principal
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		MedicinaGeneral a = new MedicinaGeneral();
+		Medico a = new MedicinaGeneral();
                 
-                Medico doctor1 = new Especialista("Juan", "Perez", 117200930, "juanperez@medicomail.com");
+                Medico doctor1 = new Medico("Juan", "Perez", 117200930, "juanperez@medicomail.com");
                 
                 doctor1.getNombre();
+                
+                //doctor1.referir();
 		
 		
 		

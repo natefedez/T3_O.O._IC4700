@@ -1,9 +1,9 @@
 package natanfdecastro.tarea3oo_lenguajes;
 import java.util.ArrayList;
 
-public abstract class Medico extends Usuario{
-    protected ArrayList<Cita> citas = new ArrayList<Cita>();
-    protected int numeroIndicador;
+public class Medico extends Usuario{
+    public ArrayList<Cita> citas = new ArrayList<Cita>();
+    public int numeroIndicador;
     
     public Medico(){};
     
