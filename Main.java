@@ -1,17 +1,19 @@
 package natanfdecastro.tarea3oo_lenguajes;
 /**
- *
+ * Instituto Tecnológico de Costa Rica
  * Tarea 3 Programacion Orientada a Objetos 
- * Lenguajes de Programacion
- * Kevin Rojas - Natan Fernandez
+ * Lenguajes de Programacion - Hospital
+ * Kevin Rojas (2016081582) - Natan Fernandez (2017105774)
  */
+ 
 
 public class Main {
     
         //Clase principal
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+                
 
 		Medico a = new MedicinaGeneral();
                 

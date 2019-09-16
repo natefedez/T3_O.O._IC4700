@@ -1,4 +1,11 @@
 package natanfdecastro.tarea3oo_lenguajes;
+/**
+ * Instituto Tecnológico de Costa Rica
+ * Tarea 3 Programacion Orientada a Objetos 
+ * Lenguajes de Programacion - Hospital
+ * Kevin Rojas (2016081582) - Natan Fernandez (2017105774)
+ */
+
 import java.util.ArrayList;
 
 public abstract class Medico extends Usuario {
@@ -32,8 +39,8 @@ public abstract class Medico extends Usuario {
     	}
     }
     
-    public ArrayList<Cita> getAgenda(){
-    	return (ArrayList<Cita>) citas.clone();
+    public ArrayList<Cita> getAgenda(){ // get que retorna citas en lista Agenda
+    	return (ArrayList<Cita>) citas.clone(); // clone?
     }
     
     public boolean citaReservada(String hora, String fecha) {
@@ -41,13 +48,16 @@ public abstract class Medico extends Usuario {
     	return true;
     }
 
-    @Override
+    @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase Medico
     public String impInforme(){
         
-        return "Nombre Medico: " + this.getNombre() + 
-        ", Apellido Paciente: " + this.getApellido()+ 
-        ", Cédula Paciente: " + this.getCedula()+
-        ", Correo Eletrónico: " + this.getCorreoElectronico();
+        // Implementación de interfaz imprimir informe
+        // Retorna String de datos de Medico
+        
+        return "Nombre Medico: " + this.getNombre() + // Retorna atributo nombre de objeto en Medico
+        ", Apellido Paciente: " + this.getApellido()+ // Retorna atributo apellido de objeto en Medico
+        ", Cédula Paciente: " + this.getCedula()+     // Retorna atributo cedula de objeto en Medico
+        ", Correo Eletrónico: " + this.getCorreoElectronico(); // Retorna atributo Correo Electronico de objeto en Medico
         
         };     
     

@@ -1,4 +1,10 @@
 package natanfdecastro.tarea3oo_lenguajes;
+/**
+ * Instituto Tecnológico de Costa Rica
+ * Tarea 3 Programacion Orientada a Objetos 
+ * Lenguajes de Programacion - Hospital
+ * Kevin Rojas (2016081582) - Natan Fernandez (2017105774)
+ */
 
 public class Especialista extends Medico {
 	
@@ -27,13 +33,16 @@ public class Especialista extends Medico {
     @Override
     public String getCorreoElectronico(){ return correoElectronico; }
 
-     @Override
+     @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase CitaPaciente
     public String impInforme(){
         
-        return "Nombre Especialista: " + this.getNombre() +
-               "Tipo Especialidad: " + this.getEspecialidad() +
-               "Cedula Especialista: " + this.getCedula() +
-               "Correo Electrónico Especialista: " + this.getCorreoElectronico();
+        // Implementación de interfaz imprimir informe
+        // Retorna String de datos de Especialista
+        
+        return "Nombre Especialista: " + this.getNombre() +     // Retorna atributo nombre de objeto en Especialista
+               "Tipo Especialidad: " + this.getEspecialidad() + // Retorna atributo Especialidad de objeto en Espealista 
+               "Cedula Especialista: " + this.getCedula() +     // Retorna atributo cedula de objeto en Especialista
+               "Correo Electrónico Especialista: " + this.getCorreoElectronico(); // Retorna atributo Correo Electronico de objeto en Especialista
          
     }; 
 	

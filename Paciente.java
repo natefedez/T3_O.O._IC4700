@@ -1,4 +1,11 @@
 package natanfdecastro.tarea3oo_lenguajes;
+/**
+ * Instituto Tecnológico de Costa Rica
+ * Tarea 3 Programacion Orientada a Objetos 
+ * Lenguajes de Programacion - Hospital
+ * Kevin Rojas (2016081582) - Natan Fernandez (2017105774)
+ */
+
 import java.util.ArrayList;
 
 public class Paciente extends Usuario {
@@ -9,6 +16,8 @@ public class Paciente extends Usuario {
         public Paciente(){};
         
         public Paciente(String nombre, String apellido, int cedula, String correoElectronico){
+            
+            // COnstructor para objeto paciente
            
             this.nombre = nombre;
             this.apellido = apellido;
@@ -39,13 +48,16 @@ public class Paciente extends Usuario {
 		return expedienteMedico.getHistorialCitas();
 	}
         
-        @Override
+        @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase Paciente
         public String impInforme(){
+            
+           // Implementación de interfaz imprimir informe
+           // Retorna String de datos de Paciente
         
-            return "Nombre Paciente: " + this.getNombre() + 
-           ", Apellido Paciente: " + this.getApellido()+ 
-           ", Cédula Paciente: " + this.getCedula()+
-           ", Correo Eletrónico: " + this.getCorreoElectronico();
+            return "Nombre Paciente: " + this.getNombre() + // Retorna atributo nombre de objeto en Paciente
+           ", Apellido Paciente: " + this.getApellido()+    // Retorna atributo apellido de objeto en Paciente
+           ", Cédula Paciente: " + this.getCedula()+        // Retorna atributo cedula de objeto en Paciente
+           ", Correo Eletrónico: " + this.getCorreoElectronico(); // Retorna atributo correo Electronico de objeto en Paciente
         
         };        
 	

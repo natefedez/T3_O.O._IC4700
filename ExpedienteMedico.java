@@ -1,5 +1,11 @@
 package natanfdecastro.tarea3oo_lenguajes;
 import java.util.ArrayList;
+/**
+ * Instituto Tecnológico de Costa Rica
+ * Tarea 3 Programacion Orientada a Objetos 
+ * Lenguajes de Programacion - Hospital
+ * Kevin Rojas (2016081582) - Natan Fernandez (2017105774)
+ */
 
 public class ExpedienteMedico implements InformeImpreso{
 	private ArrayList<Cita> historialCitas;
@@ -33,10 +39,13 @@ public class ExpedienteMedico implements InformeImpreso{
 		this.medicamentos = medicamentos;
 	}
 
-    @Override
+    @Override // Se sobreescribe método impInforme para interfaz InformeImpreso para clase CitaPaciente
     public String impInforme(){
         
-        return "hola";
+        // Implementación de interfaz imprimir informe
+        // Retorna String de datos de ExpedienteMedico de Paciente
+        
+        return "Expediente";
         
     };
 	
