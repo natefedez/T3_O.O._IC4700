@@ -1,5 +1,8 @@
+package natanfdecastro.tarea3oo_lenguajes;
+
 
 public interface InformeImpreso{
-    public void impInforme();
+    
+    public String impInforme();
     
 }

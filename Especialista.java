@@ -1,4 +1,4 @@
-
+package natanfdecastro.tarea3oo_lenguajes;
 
 public class Especialista extends Medico {
 	
@@ -17,7 +17,7 @@ public class Especialista extends Medico {
         
     }
     
-    
+    public Especialidad getEspecialidad(){ return tipoEspecialidad; }
     @Override
     public String getNombre(){ return nombre; }
     @Override
@@ -26,5 +26,15 @@ public class Especialista extends Medico {
     public int getCedula(){ return cedula; }
     @Override
     public String getCorreoElectronico(){ return correoElectronico; }
+
+     @Override
+    public String impInforme(){
+        
+        return "Nombre Especialista: " + this.getNombre() +
+               "Tipo Especialidad: " + this.getEspecialidad() +
+               "Cedula Especialista: " + this.getCedula() +
+               "Correo Electrónico Especialista: " + this.getCorreoElectronico();
+         
+    }; 
 	
 }

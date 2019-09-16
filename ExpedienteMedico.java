@@ -1,4 +1,4 @@
-
+package natanfdecastro.tarea3oo_lenguajes;
 import java.util.ArrayList;
 
 public class ExpedienteMedico implements InformeImpreso{
@@ -32,6 +32,12 @@ public class ExpedienteMedico implements InformeImpreso{
 	public void setMedicamentos(ArrayList<String> medicamentos) {
 		this.medicamentos = medicamentos;
 	}
-	
+
+    @Override
+    public String impInforme(){
+        
+        return "hola";
+        
+    };
 	
 }

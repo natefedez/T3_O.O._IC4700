@@ -1,8 +1,10 @@
+package natanfdecastro.tarea3oo_lenguajes;
+
 
 public abstract class Cita implements InformeImpreso{
     
-	private String fecha;
-	private String hora;
+	protected String fecha;
+	protected String hora;
 
 	public String getFecha() {
 		return fecha;

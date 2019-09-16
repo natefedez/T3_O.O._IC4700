@@ -1,4 +1,4 @@
-
+package natanfdecastro.tarea3oo_lenguajes;
 import java.util.ArrayList;
 
 public class PersonalAdministrativo extends Usuario {
@@ -10,4 +10,13 @@ public class PersonalAdministrativo extends Usuario {
 	private ArrayList<Cita> accederAgendaPaciente (Paciente paciente){
 		return paciente.getAgenda();
 	}
+        
+        @Override
+        public String impInforme(){
+        
+            //listaAgenda.forEach((cita) -> {
+            
+                return "Hola";
+        
+        };
 }

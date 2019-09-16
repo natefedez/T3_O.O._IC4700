@@ -1,4 +1,4 @@
-
+package natanfdecastro.tarea3oo_lenguajes;
 import java.util.ArrayList;
 
 public abstract class Medico extends Usuario {
@@ -24,7 +24,7 @@ public abstract class Medico extends Usuario {
     public Cita asignarCita(Paciente paciente, String hora, String fecha) {
     	
     	if(citaReservada(hora, fecha)) {
-    		Cita nuevaCita = new Cita(paciente, this, fecha, hora);
+    		CitaPaciente nuevaCita = new CitaPaciente(paciente, fecha, hora);
     		citas.add(nuevaCita);
     		return nuevaCita;
     	} else {
@@ -40,5 +40,15 @@ public abstract class Medico extends Usuario {
     	//Determina si una exista ya existe en la agenda
     	return true;
     }
+
+    @Override
+    public String impInforme(){
+        
+        return "Nombre Medico: " + this.getNombre() + 
+        ", Apellido Paciente: " + this.getApellido()+ 
+        ", Cédula Paciente: " + this.getCedula()+
+        ", Correo Eletrónico: " + this.getCorreoElectronico();
+        
+        };     
     
 }

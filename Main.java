@@ -1,4 +1,4 @@
-
+package natanfdecastro.tarea3oo_lenguajes;
 /**
  *
  * Tarea 3 Programacion Orientada a Objetos 
@@ -15,9 +15,9 @@ public class Main {
 
 		Medico a = new MedicinaGeneral();
                 
-                Medico doctor1 = new Medico("Juan", "Perez", 117200930, "juanperez@medicomail.com");
+                //Medico doctor1 = new Medico("Juan", "Perez", 117200930, "juanperez@medicomail.com");
                 
-                System.out.println(doctor1.getNombre());
+                //System.out.println("Hola");
                 
                 //doctor1.referir();
 		
